@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimisha | Portfolio</title>
+<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgWpYUKbZN_xyZTwnA676XgtDKXGdsvuq9Cw&"/>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      color: #fff;
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Navbar */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0,0,0,0.4);
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      backdrop-filter: blur(10px);
+      z-index: 10;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffebf7;
+    }
+
+    /* Hero Section */
+    header {
+      padding-top: 90px;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+      margin-bottom: 15px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    header img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(255,255,255,0.8);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 6px;
+    }
+    header h2 {
+      font-size: 1.2rem;
+      font-weight: 300;
+      opacity: 0.9;
+    }
+    header p {
+      margin-top: 10px;
+      font-style: italic;
+      opacity: 0.8;
+      max-width: 500px;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 12%;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 15px;
+      padding: 30px;
+      margin-bottom: 40px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+    h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #ffe6f2;
+      text-align: center;
+    }
+    .divider {
+      width: 60px;
+      height: 3px;
+      background: #ffe6f2;
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      margin-top: 10px;
+    }
+    .skill {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+      font-size: 0.95rem;
+    }
+    .skill:hover {
+      transform: scale(1.07);
+      background: rgba(255,255,255,0.2);
+    }
+
+    /* Contact */
+    .contact p {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      background: rgba(0,0,0,0.4);
+    }
+
+    /* Animations */
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <img src="https://media.licdn.com/dms/image/v2/D4E03AQFlBsvWqFl9Og/profile-displayphoto-crop_800_800/B4EZkLdcBMIwAo-/0/1756833893012?e=1762387200&v=beta&t=3Gch2zHZSB94ruJ6FCEwsgyMOe0lK381T9HYiCL0NBw" alt="Profile Picture">
+    <h1>Hi, I'm Nimisha</h1>
+    <h2>Student at Scaler School of Technology</h2>
+    <p>"Turning ideas into reality, one line of code at a time."</p>
+  </header>
+
+  <section id="about" class="card">
+    <h3>About Me</h3>
+    <div class="divider"></div>
+    <p>
+      I'm Nimisha, a passionate learner at Scaler School of Technology.  
+      I love building clean and functional web pages using HTML & CSS,  
+      exploring problem-solving with programming, and expressing creativity in my work.  
+      My goal is to keep learning, growing, and building projects that truly make an impact.  
+    </p>
+  </section>
+
+  <section id="skills" class="card">
+    <h3>My Skills</h3>
+    <div class="divider"></div>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Java</div>
+      <div class="skill">Problem Solving</div>
+      <div class="skill">Creativity</div>
+      <div class="skill">Teamwork</div>
+    </div>
+  </section>
+
+  <section id="contact" class="card contact">
+  <h3>Contact Me</h3>
+  <div class="divider"></div>
+  <p>📧 Email: <a href="mailto:nimisha.25bcs10133@sst.scaler.com">nimisha.25bcs10133@sst.scaler.com</a></p>
+  <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/nimisha-de-87920837b/" target="_blank">https://www.linkedin.com/in/nimisha-de-87920837b//<a></p>
+  <p>📱 Phone: <a href="tel:+918910522977">+91 8910522977</a></p>
+</section>
+
+
+  <footer>
+    <p>© 2025 Nimisha | Built with ❤️ using only HTML & CSS</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+
+
